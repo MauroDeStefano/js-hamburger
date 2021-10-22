@@ -1,9 +1,15 @@
 const openMenu = document.querySelector(".hamburger-menu");
-const btnBurger = document.querySelector(".close");
+const btnBurger = document.querySelector(".fas.fa-bars");
+const btnClose = document.querySelector(".close");
 
-console.log(btnBurger);
-console.log(openMenu);
 
 btnBurger.addEventListener("click",function(){
-  openMenu.addClass("active");
+  openMenu.classList.add("active");
+  console.log("Ho cliccato, lo giuro");
 });
+
+btnClose.addEventListener("click",function(){
+  openMenu.classList.remove("active");
+  console.log("Ho cliccato, lo giuro");
+});
+
